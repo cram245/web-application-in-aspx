@@ -18,8 +18,6 @@ namespace WebApplication1
         {
             SiteMaster siteMaster = this.Master as SiteMaster;
             siteMaster.Username = InputUsername.Value;
-
-            
         }
     }
 }

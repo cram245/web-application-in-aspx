@@ -18,7 +18,6 @@ namespace WebApplication1
             set 
             {
                 username = value;
-                LabelUser.Text = value;
             }
         }
 
