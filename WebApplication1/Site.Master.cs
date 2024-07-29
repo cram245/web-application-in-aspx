@@ -9,6 +9,20 @@ namespace WebApplication1
 {
     public partial class SiteMaster : MasterPage
     {
+        private string username;
+        public string Username {
+            get
+            { 
+                return username; 
+            }
+            set 
+            {
+                username = value;
+                LabelUser.Text = value;
+            }
+        }
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
 

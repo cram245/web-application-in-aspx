@@ -1,18 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WebApplication1.Login" %>
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WebApplication1.Login" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+
+
+
+
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <main>
         <div>
-            <asp:Login ID="Login1" runat="server" Height="158px" OnAuthenticate="Login1_Authenticate" Width="328px">
-            </asp:Login>
+            <asp:Label ID="LabelLogin" runat="server"></asp:Label>
         </div>
-    </form>
-</body>
-</html>
+        <div class="login">
+            <asp:Label ID="LabelUsuario" runat="server" Text="Usuario:"></asp:Label>
+            <input ID="InputUsername" type="text" runat="server"/>
+
+        </div>
+        <asp:Button ID="ButtonSubmit" runat="server" Text="Enviar" OnClick="ButtonSubmit_Click" />
+    </main>
+</asp:Content>
+

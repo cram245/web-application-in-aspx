@@ -14,9 +14,12 @@ namespace WebApplication1
 
         }
 
-        protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
+        protected void ButtonSubmit_Click(object sender, EventArgs e)
         {
+            SiteMaster siteMaster = this.Master as SiteMaster;
+            siteMaster.Username = InputUsername.Value;
 
+            
         }
     }
 }

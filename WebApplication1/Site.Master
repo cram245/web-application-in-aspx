@@ -8,7 +8,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
-
+    <style>
+        #Text1 {
+            margin-bottom: 0px;
+        }
+        .login {
+            text-align: center;
+            display: flex;
+        }
+        .login input {
+            margin-left: 10px;
+        }
+        .login label {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -45,6 +60,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <asp:Label ID="LabelUser" class="text-white" runat="server" Text="Label"></asp:Label>
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Inicio</a></li>
