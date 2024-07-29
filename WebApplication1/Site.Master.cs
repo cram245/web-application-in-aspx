@@ -9,22 +9,15 @@ namespace WebApplication1
 {
     public partial class SiteMaster : MasterPage
     {
-        private string username;
-        public string Username {
-            get
-            { 
-                return username; 
-            }
-            set 
-            {
-                username = value;
-            }
-        }
+        public string Username;
+        public static string Username2;
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }

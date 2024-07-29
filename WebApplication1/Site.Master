@@ -60,7 +60,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <asp:Label ID="LabelUser" class="text-white" runat="server"> <%=Username %> </asp:Label>
+                <asp:Label ID="LabelUser" class="text-white" runat="server"> <%=Username %><%=Username2 %> </asp:Label>
                 
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
